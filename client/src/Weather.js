@@ -8,7 +8,7 @@ function Weather() {
 
   useEffect(() => {
     const getCurrentWeather = async () => {
-      const response = await fetch('http://localhost:5000/api/v1/weather', {
+      const response = await fetch('https://weather-react-api.herokuapp.com/api/v1/weather', {
         body: JSON.stringify({
           lat: position.coords.latitude,
           lon: position.coords.longitude,
