@@ -33,7 +33,7 @@ function Weather() {
   }
 
   if ((!position && !error) || !current) {
-    return <p className="loading">Allow location access</p>;
+    return <p className="loading">Waiting...</p>;
   }
 
   return (
@@ -50,7 +50,7 @@ function Weather() {
         </div>
         <div className="weather__condition">
           <img
-            src={`https://openweathermap.org/img/wn/${current.weather[0].icon}.png`}
+            src={`https://openweathermap.org/img/wn/${current.weather[0].icon}@2x.png`}
             alt={current.weather[0].description}
           ></img>
           <div>
